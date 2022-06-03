@@ -1,6 +1,6 @@
 local cps = "6"
 game:GetService("UserInputService").InputBegan:Connect(function(a)
-  if a.KeyCode == Enum.KeyCode.` then
+  if a.KeyCode == Enum.KeyCode.Backquote then
     if _G.enabled == true then
       _G.enabled = nil
     else
