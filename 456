@@ -1,0 +1,18 @@
+local cps = "6"
+game:GetService("UserInputService").InputBegan:Connect(function(a)
+  if a.KeyCode == Enum.KeyCode.Backquote then
+    if _G.enabled == true then
+      _G.enabled = nil
+    else
+      _G.enabled = true
+    end
+  end
+end)
+while wait(0,1) do
+  if _G.enabled == true then
+      for x = 1,cps do
+    game.ReplicatedStorage.Events.ActualUseBagItem:FireServer("Bloodfruit")
+    
+end
+end
+end
